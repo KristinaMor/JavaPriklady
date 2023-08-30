@@ -14,7 +14,7 @@ public class SamostatnaUloha {
 
     public static void main(String[] args) {
         while (true) {
-            String znamkaAkoSlovo = String.valueOf(0);
+            String znamkaAkoSlovo = ""; //Dve uvodzovky reprezuntuju prazdny retazec
             Scanner skener = new Scanner(System.in);
 
             System.out.println("Zadaj textovú známku: ");
