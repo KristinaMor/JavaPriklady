@@ -1,4 +1,4 @@
-package Úlohy;
+package ulohy;
 
 //Obdobná matica, ktorá bude osahovať dvojnásobok predchadzajucej hodnoty (začneme 1)
 

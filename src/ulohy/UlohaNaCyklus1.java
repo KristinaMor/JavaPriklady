@@ -1,4 +1,4 @@
-package Úlohy;
+package ulohy;
 /*Úloha na opakovanie č.1: Vypíš maticu s údajmi od 1 do 25*/
 
 public class UlohaNaCyklus1 {

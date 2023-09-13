@@ -1,4 +1,4 @@
-package Úlohy;
+package ulohy;
 /*
 Úloha č.1: Príklad na prácu s premennými
         Vypíšte do konzoly nasledujúci text:

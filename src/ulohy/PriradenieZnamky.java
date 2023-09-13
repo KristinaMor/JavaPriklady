@@ -1,4 +1,4 @@
-package Úlohy;
+package ulohy;
 
  /*Popis z pohladu pouzivatela: Program vyzve pouzivatela na ciselny vstup, t. k. pocet bodov, ktore po odobreni vyhodnoti a vypise zodpovedajucu znamku podla kriterii. Nasledne sa program ukonci. Program bude fungovat do nekonecna, kym nezadame vstupnu hodnotu -1*/
 

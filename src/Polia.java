@@ -21,5 +21,11 @@ public class Polia {
         for (String konkretnaZnacka:auta) {
             System.out.println(konkretnaZnacka);
         }
+        //TODO doplniť ešte jedno auto do pola auta - toto nie je take jednoduche kvoli statickosti
+
+        int [] cislo = new int [8]; //inicializacia statickeho pola s 8 prvkami
+        cislo[0] = 10;
+        System.out.println(cislo[0]);
+        System.out.println(cislo[1]);
     }
 }

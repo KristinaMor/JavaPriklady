@@ -1,6 +1,5 @@
-package Úlohy;
+package ulohy;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import static java.lang.Character.isLetter;

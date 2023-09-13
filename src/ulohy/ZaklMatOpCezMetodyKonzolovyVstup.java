@@ -1,9 +1,12 @@
-package Úlohy;
+package ulohy;
 
 // TODO Vytvorte metody obdobnym sposobom aj pre odcitanie, nasobenie, delenie a modulo
 
-public class ZakladneMatematickeOperacieCezMetody {
-       public static double scitanie(double cislo1, double cislo2) {
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ZaklMatOpCezMetodyKonzolovyVstup {
+   public static double scitanie(double cislo1, double cislo2) {
        double sucet = cislo1 + cislo2;
        return sucet;
       // return cislo1 + cislo2;
@@ -30,14 +33,25 @@ public class ZakladneMatematickeOperacieCezMetody {
     }
 
     public static void main(String[] args) {
-        double cislo1 = 8, cislo2 = 2.5;
-        //scitanie(cislo1, cislo2);
-     /*   System.out.println("Súčet 2 čísel " + scitanie(cislo1, cislo2));
-        System.out.printf("Súčet 2 čísel %.1f a %.1f je %.1f%n", cislo1, cislo2, scitanie(cislo1, cislo2));
-        System.out.printf("Rozdiel 2 čísel %.1f a %.1f je %.1f%n", cislo1, cislo2, odcitanie(cislo1, cislo2));
-        System.out.printf("Násobenie 2 čísel %.1f a %.1f je %.1f%n", cislo1, cislo2, nasobenie(cislo1, cislo2));
-        System.out.printf("Podiel 2 čísel %.1f a %.1f je %.1f%n", cislo1, cislo2, delenie(cislo1, cislo2));
-        System.out.printf("Zvyšok po delení 2 čísel %.1f a %.1f je %.1f%n", cislo1, cislo2, modulo(cislo1, cislo2));*/
+        double cislo1 = 0, cislo2 = 0;
+
+        //Konzolovy vstup od použivatela
+        Scanner skener = new Scanner(System.in); // inicializovali sme konzlovy skener na vstup z klavesnice
+
+        //TODO ako eliminovať chybu ak zadame desatinne čislo s bodkov miesto ciarky, reakcia na chybu bude: Zadal si chybu a program skonči
+
+        System.out.println("Zadaj prvé číslo: ");
+        try {
+            cislo1 = skener.nextDouble();
+        } catch (InputMismatchException e) {
+            System.out.println("Zadal si neakceptovatelny formát čísla");
+            System.exit(1); //násilne ukoncenie programu
+        }finally { // bez ohladu na chybu sa skener uzavre
+           //skener.close();
+        }
+
+        System.out.println("Zadaj druhé číslo: ");
+        cislo2 = skener.nextDouble();
 
         //Vypis vysledkov matematickych operacii volanim metody vypis
         vypis("Súčet", cislo1, cislo2, scitanie(cislo1, cislo2));

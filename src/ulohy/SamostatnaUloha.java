@@ -1,4 +1,4 @@
-package Úlohy;
+package ulohy;
 
 
 import java.text.Normalizer;

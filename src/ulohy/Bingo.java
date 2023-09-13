@@ -1,4 +1,4 @@
-package Úlohy;
+package ulohy;
 
 import java.util.Random;
 import java.util.Scanner;
